@@ -10,7 +10,7 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint src --color",
-     "build": "electron-packager . electron-app --all --overwrite"
+    "build": "electron-packager . electron-app --all --overwrite"
   },
   "keywords": [],
   "author": "fluvixx",
@@ -49,7 +49,8 @@
   },
   "dependencies": {
     "electron-compile": "^6.4.3",
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "semantic-ui": "^2.3.2"
   },
   "devDependencies": {
     "babel-plugin-transform-async-to-generator": "^6.24.1",
