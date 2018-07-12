@@ -1,7 +1,56 @@
-.game-card{
+:root {
+  --cream: #FFF8DC;
+  --strawberry: #F08080;
+  --chocolate: #835C3B;
+}
+
+body {
+	background-color: var(--cream) !important;
+}
+
+.container {
+	padding-top: 6%;
+}
+
+.text-chocolate {
+	color: var(--chocolate) !important;
+}
+.text-strawberry {
+	color: var(--strawberry) !important;
+}
+.text-cream {
+	color: var(--cream) !important;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.navigation {
+	text-align: center;
+	padding-bottom: 6%;
+
+}
+
+.start {
+	position: relative;
+	text-transform: uppercase !important;
+	color: var(--cream)!important;
+	background-color: var(--strawberry) !important;
+	width: 200px;
+}
+
+.game-card {
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: white;
 	cursor: pointer;
-	width: 20%;
-	padding: 40%;
+	width: 10%;
+	padding: 30%;
+	border: solid 2px var(--chocolate); 
 }
+

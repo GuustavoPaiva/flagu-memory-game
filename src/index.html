@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <title>FlaGu Memory Game</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="semantic.min.css">
-</head>
-
-<body>
-
-    <h1>FlaGu Memory game</h1>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-    </p>
-    <button class='ui button'>start</button>
-
-    <div class="ui grid" id="game-grid">
-
-    </div>
-
-    <source type="text/javascript" src="semantic.min.js"></script>
-    <script type="text/javascript" src="flagu.js"></script>
-</body>
-
+    <head>
+        <meta charset="utf-8">
+        <title>FlaGu - Memory Game</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="semantic.min.css">
+    </head>
+    <body>
+        <div class="ui container">
+            <h1 class="ui header text-strawberry text-center">FlaGu - Memory Game</h1>
+            <p class="text-justify text-chocolate">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            </p>
+            <div class="navigation">
+                <button class="huge ui button start" id="normal" onclick="start(3)"> Normal</button> <button class="huge ui button start" id="hard" onclick="start(4)"> Hard</button>
+            </div>
+            <div class="ui grid" id="game-grid">
+            </div>
+        </div>
+        <source type="text/javascript" src="semantic.min.js"></script>
+        <script type="text/javascript" src="flagu.js"></script>
+    </body>
 </html>
