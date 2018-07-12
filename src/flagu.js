@@ -3,12 +3,15 @@ var $ = require('jquery');
 var MemoryGame = require('./../src/memgame.js')
 
 
-
 function start(size) {
     var game = new MemoryGame(size);
     var grid = document.getElementById('game-grid');
+    var nav = document.getElementById('nav');
     while (grid.firstChild) {
         grid.removeChild(grid.firstChild);
+    }
+    while (nav.firstChild) {
+        nav.removeChild(nav.firstChild);
     }
     for (var i = 0; i < size*size; i++) {
 
