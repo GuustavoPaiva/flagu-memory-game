@@ -1,8 +1,8 @@
 {
-  "name": "electron-app",
-  "productName": "electron-app",
+  "name": "electron_app",
+  "productName": "flagu-mem-game",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Memory game from Flávia and Gustavo",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -10,7 +10,8 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint src --color",
-    "build": "electron-packager . electron-app --all --overwrite"
+    "build": "electron-packager . electron-app --all --overwrite",
+    "test": "mocha"
   },
   "keywords": [],
   "author": "fluvixx",
@@ -50,12 +51,13 @@
   "dependencies": {
     "electron-compile": "^6.4.3",
     "electron-squirrel-startup": "^1.0.0",
-    "semantic-ui": "^2.3.2"
+    "semantic-ui": "^2.3.3"
   },
   "devDependencies": {
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "electron": "^2.0.4",
     "electron-forge": "^5.2.2",
     "electron-packager": "^12.1.0",
     "electron-prebuilt-compile": "2.0.4",
