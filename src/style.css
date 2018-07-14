@@ -1,5 +1,5 @@
 :root {
-  --cream: #FFF8DC;
+  --cream: #FFF8DC; 
   --strawberry: #F08080;
   --chocolate: #835C3B;
 }
@@ -54,3 +54,14 @@ body {
 	border: solid 2px var(--chocolate); 
 }
 
+#game-grid {
+	padding-left: 12%;
+}
+
+.flipped {
+	border:  solid 2px green;
+}
+
+.unflipped {
+	border:  solid 2px red;
+}
