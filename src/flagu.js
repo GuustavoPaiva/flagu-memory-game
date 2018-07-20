@@ -55,10 +55,12 @@ function start(size) {
         }
 
 
-        game_card.innerHTML = game.board[i].value
+        game_game_card.id = "game-card-" + i;
+        card.innerHTML = game.board[i].value
 
         card.appendChild(game_card);
         grid.appendChild(card)
     }
+
 
 }
